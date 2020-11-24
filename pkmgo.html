@@ -4,23 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Inicio Bootstrap Remoto
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    --><!--Fin Bootstrap Remoto-->
+    <!--Bootstrap en local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--Bootstrap en local -->
     <link rel="stylesheet" href="css/estilos.css" />
-    <title>Pokemon's FanPage</title>
+    <title>Pokémon Go</title>
 </head>
 
 <body>
     <header class="container-fluid">
-        <h1><img src="img/Int_Pkmon_logo.png" width="200" alt="Pok&eacute;mon" /></h1>
-        <p>La presente es una Fan Page que compila datos de La Saga Pokémon, tando en videojuegos como el animé
-        </p>
+      <h1>
+        <img src="img/Pkmon_GO_logo.png" width="200" alt="Pok&eacute;mon Go" />
+      </h1>
+      <p>
+        Pokémon GO es un videojuego de realidad aumentada basado en la localización desarrollado por Niantic para
+        dispositivos iOS y Android.
+      </p>
     </header>
     <div class="container">
       <nav class="navbar navbar-expand-md navbar-dark">
-        <img src="img/pika.gif" alt="" height="35px">
+        <img src="img/pika.gif" alt="" height="35">
         <a class="navbar-brand" href="index.html">Pokémon</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miMenu">
           <span class="navbar-toggler-icon"></span>
@@ -42,14 +54,53 @@
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="pkmgo.html">Pokemon Go</a></li>
-            <li class="nav-item"></li><a class="nav-link" href="pkmctc.html">Contacto</a></li>  
+            <li class="nav-item"><a class="nav-link" href="pkmctc.html">Contacto</a></li>
           </ul>
-        </div>  
+        </div>
       </nav>
+      <div id="principal">
+        <article>
+          <h2>El Juego</h2>
+          <p>Se trata de una adaptación del espíritu de los videojuegos RPG que hemos conocido en las consolas de Nintendo,
+            es una experiencia similar pero trasladada a dispositivos móviles.</p>
+          <p>El juego consiste en buscar y capturar personajes de la saga Pokémon escondidos en ubicaciones del mundo real y
+            luchar con ellos, lo que implica desplazarse físicamente por las calles de la ciudad para progresar. La
+            aplicación comporta un elemento de interacción social, ya que promueve reuniones físicas de los usuarios en
+            distintas ubicaciones de sus poblaciones y bosques entre otros.</p>
+          <p>El juego se lanzó en Argentina el 3 de agosto de 2016</p><img src="img/pokemon-go-smartphone.png" width="200"
+            alt="Smartphone corriendo Pokémon Go" class="float-left" />
+          <p>El juego usa nuestra localización en tiempo real por medio de la red GPS para posicionarnos en nuestro entorno
+            físico. Por lo tanto, como requisito para jugar a Pokémon Go hace falta estar conectado a Internet, ya sea
+            mediante una red Wi-Fi o usando nuestra conexión de datos.</p>
+          <p>Siguiendo con la idea de realidad aumentada que implementa este juego, al encender la cámara del celular se
+            podrá visualizar la imagen virtual de un pokémon sobrepuesta en la escena real. Estas características del
+            vídeojuego lo clasifican como realidad aumentada, ya que mezcla elementos reales con ficticios con la
+            intermediación del teléfono celular.</p>
+          <p>Este juego cuenta con otros elementos y objetos que sirven para el entrenamiento de los pokémon. Para hacer
+            evolucionar a los pokémon se necesitan caramelos. Estos caramelos se consiguen atrapando pokémons, gracias a
+            huevos de pokémon o por transferencia. Además de los caramelos, el polvo estelar también sirve para hacer
+            evolucionar a los pokémon.</p>
+          <img src="img/pokemonhome.png" width="352" alt="relacion de juegos con Pokémon Home" class="float-right" />
+          <p>El servicio Pokemon HOME fue anunciado el año pasado, antes de su lanzamiento en febrero de 2020. Permite a los
+            jugadores transferir su Pokemon a través de diferentes títulos mediante el uso de una práctica aplicación. Se
+            diseñó teniendo en cuenta el Nintendo Switch y salió a la venta unos meses después de Pokemon Sword and Shield.
+          </p>
+          <p>En un principio, los jugadores que tuvieran Pokemon Sword y/o Shield y Pokemon Let’s Go Pikachu y/o Eevee,
+            podrían transferir libremente su Pokemon entre los dos juegos, lo que les ayudaría a completar su ‘Dex’ y a
+            mover su Pokemon de competición entre los juegos. Sin embargo, eso dejaba a los jugadores de Pokemon GO sin
+            acceso. Eso era hasta ahora.</p>
+          <p>A partir del 11 de noviembre de 2020, los jugadores de Pokemon GO que estén en el nivel máximo, 40, podrán
+            transferir el Pokemon que hayan capturado a Pokemon HOME y luego a Sword o Shield desde allí. Hay algunas
+            advertencias con eso, sin embargo, algunas que incluyen cargos extras.</p>
+          <p>Los jugadores tendrán que usar el “Transportador de Pokemon” en Pokemon GO para mover su Pokemon a HOME. Este
+            ítem solo tiene una cierta cantidad de “energía”, sin embargo, que se agota con cada Pokemon transferido. La
+            cantidad de energía que se utiliza depende del tipo de Pokemon y de si es brillante, legendario, mítico o no.
+          </p>
+        </article>
+      </div>
 </div>
-    <footer class="container-fluid">
+    <footer class="container-fluid fixed-bottom">
         <div class="row">
-
             <div class="col-4">
                 Pokémon Fan Page: Diseñado por <a href="https://github.com/matiasherr">Matías Herrera</a>
             </div>
@@ -62,5 +113,4 @@
         </div>
     </footer>
 </body>
-
 </html>

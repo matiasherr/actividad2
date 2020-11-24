@@ -1,5 +1,5 @@
 html, body{
-  background-color: #fbfaa4; 
+  background-color: #fbfaa4;
   height:100%;
   margin:0;
   display: flex;
@@ -7,12 +7,11 @@ html, body{
   font-family: sans-serif;
   text-align: justify;
 }
-body {
-  height: 100vh;
-  padding: 0;
-  min-height: 100%;
+body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
 }
-
 .container-fluid{
   background-color: #ffcb05;
 }
@@ -21,13 +20,21 @@ header h1{
 }
 footer{
   bottom: 0;
-position: absolute;
+  position: absolute ;
   border-top-style: solid;
   font-size: 7pt;
   padding-top: 10pt;
+  padding-bottom: 10px;
   text-align: center;
   font-style: oblique;
   font-weight: bolder;
+}
+#principal{
+  margin-bottom: 85px;
+}
+.dropdown-menu{
+  background-color:#60729b;
+  padding-left: 7px;
 }
 header p{
   text-align: center;
@@ -37,14 +44,6 @@ nav {
   background-color:#3c5ba6 ;
   font-size:13pt;
 }
-/*
-ul.nav{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}*/
 nav a:link,nav a:visited,nav a:active{
   text-decoration: none;
   color: #ffcb05 !important;
@@ -68,8 +67,12 @@ footer a:link,footer a:visited,footer a:active{
 footer a:hover{
   color: #3c5ba6;
 }
-/*
-
+.float-left{
+  margin-right: 17px;
+}
+.float-right{
+  margin-left: 25px;
+}
 #principal a:link, #principal a:visited, #principal a:active{
   color: #3c5ba6;
   font-weight: bold;
@@ -83,16 +86,6 @@ footer a:hover{
 li{
   margin: 10pt;
 }
-#principal{
-  margin-right: 20px;
-  margin-left: 20px;
-}
-table, td, th{
-  border: 1px solid black;
-  text-align: left;
-  margin-bottom: 15px;
-  border-collapse:collapse;
-}
 th{
   text-align: center;
   background-color: #ffcb05;
@@ -103,22 +96,29 @@ td {
   padding-right: 5px;
   vertical-align:text-top;
 }
-.center{
-  text-align: center;
-}
-.imleft{
-  float: left;
-}
-.imright{
-  float: right;
-  margin: 15px;
-}
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+h2{
+  font-weight: bold;
+  color: #3c5ba6;
+  font-style:italic;
+  padding-top: 15px;
 }
 h3, h4, h5, h6{
   color: #3c5ba6;
   font-style:italic;
+}
+.st{
+  font-style: italic;
+  font-variant: small-caps;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #3c5ba6;
+  font-weight: bold;
+}
+.container-logo{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.img-responsive{
+    margin: 0 auto;
 }

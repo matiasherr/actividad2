@@ -2,65 +2,312 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-    <link rel="stylesheet" href="css/estilos.css" />
-    <title>Pokémon: El Animé</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Inicio Bootstrap Remoto
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  --><!--Fin Bootstrap Remoto-->
+  <!--Bootstrap en local -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--Bootstrap en local -->
+  <link rel="stylesheet" href="css/estilos.css" />
+  <title>Pokémon: El Animé</title>
+  <style>
+    h2.art {
+      visibility: hidden;
+    }
+
+    #principal ol,
+    #principal ul {
+      margin-bottom: 0 !important;
+      font-size: smaller;
+    }
+
+    #principal li {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="container-fluid">
-        <h1><img src="img/Int_Pkmon_logo.png" width="200" alt="Pok&eacute;mon" /></h1>
-        <p>La presente es una Fan Page que compila datos de La Saga Pokémon, tando en videojuegos como el animé
+  <!--Cabecera cambia dependiendo de la sección-->
+  <header class="container-fluid">
+    <h1><img src="img/Int_Pkmon_logo.png" width="200" alt="Pok&eacute;mon: La serie Animada" /></h1>
+    <p>Pokémon (animé)
+    </p>
+  </header>
+  <!--Fin Cabecera Cabecera-->
+  <div class="container">
+    <!--Barra Navegación Inicio-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <img src="img/pika.gif" alt="" height="35">
+      <a class="navbar-brand" href="index.html">Pokémon</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="miMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="pkmsaga.html">La Saga</a></li>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">El Anime <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="pkmserie.html">Animé Pokémon</a></li>
+              <li><a href="pkmserie1.html">La Serie Original</a></li>
+              <li><a href="pkmserie2.html">Generación Avanzada</a></li>
+              <li><a href="pkmserie3.html">Diamante Y Perla</a></li>
+              <li><a href="pkmserie4.html">Blanco Y Negro</a></li>
+              <li><a href="pkmserie5.html">XY</a></li>
+              <li><a href="pkmserie6.html">Sol y Luna</a></li>
+              <li><a href="pkmserie7.html">Pocket Monsters</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pkmgo.html">Pokemon Go</a></li>
+          <li class="nav-item"><a class="nav-link" href="pkmctc.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--Barra Navegación Fin-->
+    <!--Inicio Contenido-->
+    <div id="principal">
+      <article>
+        <h2 class="art">El Anime:</h2>
+        <p>Pokémon es un anime metaserial creado por Satoshi Tajiri, Junichi Masuda y Ken Sugimori, que narra la
+          historia
+          de Ash Ketchum, un joven entrenador Pokémon de Pueblo Paleta que comienza un viaje para alcanzar su sueño, ser
+          un Maestro Pokémon. La serie está basada en la saga de videojuegos de Pokémon también creada por <a
+            href="https://es.wikipedia.org/wiki/Satoshi_Tajiri">Satoshi Tajiri</a>, desarrollada por Game Freak y
+          distribuida por Nintendo, que aparecieron por primera vez en el mercado japonés el 27 de febrero de 1996.</p>
+        <p>El éxito de los videojuegos que aún se mantiene hasta estos días, hizo que su trama fuera adaptada en un
+          anime
+          producido por los estudios de animación OLM, Inc., el cual es emitido por la cadena de televisión TV Tokyo
+          desde
+          que se estrenó el 1 de abril de 1997.</p>
+      </article>
+      <article>
+        <h2 class="art">Detalle Temporadas:</h2>
+        <h3>Argumento</h3>
+        <p>Ash Ketchum es un muchacho entusiasta a quien le gustan los Pokémon y las batallas. Su gran pasión por los
+          pokémon lo ha llevado a proponerse el objetivo de convertirse en Maestro Pokémon, el más alto grado de
+          entrenamiento Pokémon, motivo por el cual comienza un viaje en búsqueda de este título. Al cumplir 10 años,
+          Ash
+          tiene la oportunidad de recibir su pokémon inicial por parte del Profesor Oak. Desafortunadamente, se quedó
+          dormido una noche antes de su primer día de viaje y para cuando llegó al laboratorio del profesor, todos los
+          Pokémon iniciales (Bulbasaur, Charmander y Squirtle) ya habían sido elegidos por otros entrenadores. </p><img
+          src="img/ashpika.jpg" width="260" alt="Ash junto a Pikachu" class="rounded float-right" />
+        <p>Su insistencia por tener un Pokémon, le permitió recibir como su Pokémon inicial un Pikachu terco al que no
+          le
+          gusta entrar en las Poké Balls. Durante su recorrido por el bosque, por novatadas e intentos frustrados para
+          capturar un pokémon, Ash y Pikachu son atacados por una bandada salvaje de Spearow.Para escapar de los pokémon
+          voladores, Ash decide sumergirse a un río para no ser visto. Al otro lado del río, una chica llamada Misty
+          (que
+          más tarde sigue a Ash en su viaje con el pretexto de que le pague su bicicleta) estaba pescando pokémon
+          acuáticos con su caña y por error captura a Ash y su Pikachu malherido que estaban sumergidos en el agua. Al
+          observar que la manada de Spearow seguía tras ellos, Ash toma la bicicleta de Misty para dirigirse al Centro
+          Pokémon y así poder curar a Pikachu pero al no poder huir a pesar de viajar en bicicleta, Ash se puso a sí
+          mismo
+          en peligro por defender a Pikachu.
         </p>
-    </header>
-    <div class="container">
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <img src="img/pika.gif" alt="" height="35px">
-        <a class="navbar-brand" href="index.html">Pokémon</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="miMenu">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="pkmsaga.html">La Saga</a></li>
-            <li class="nav-item dropdown">
-              <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">El Anime  <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="pkmserie.html">Animé Pokémon</a></li>
-                <li><a href="pkmserie1.html">La Serie Original</a></li>
-                <li><a href="pkmserie2.html">Generación Avanzada</a></li>
-                <li><a href="pkmserie3.html">Diamante Y Perla</a></li>
-                <li><a href="pkmserie4.html">Blanco Y Negro</a></li>
-                <li><a href="pkmserie5.html">XY</a></li>
-                <li><a href="pkmserie6.html">Sol y Luna</a></li>
-                <li><a href="pkmserie7.html">Pocket Monsters</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="pkmgo.html">Pokemon Go</a></li>
-            <li class="nav-item"></li><a class="nav-link" href="pkmctc.html">Contacto</a></li>  
-          </ul>
-        </div>  
-      </nav>
-</div>
-    <footer class="container-fluid">
-        <div class="row">
-
-            <div class="col-4">
-                Pokémon Fan Page: Diseñado por <a href="https://github.com/matiasherr">Matías Herrera</a>
-            </div>
-            <div class="col">
-                Pokémon y todos los personajes son una marca registrada por <a href="https://www.pokemon.com/">The
-                    Pokémon Company</a> - integrada por <a href="https://www.nintendo.com/">© Nintendo</a>, <a
-                    href="https://www.gamefreak.co.jp/">© Game Freak</a>, y <a href="https://www.creatures.co.jp/en/">©
-                    Creatures, Inc.</a>
-            </div>
-        </div>
-    </footer>
+        <p> Por medio de estas demostraciones de respeto y compromiso incondicional a su pokémon, Pikachu comenzó a
+          sentir
+          aprecio por Ash y su amistad se formó. Poco después en el Centro Pokémon, en una confrontación contra el
+          Equipo
+          Rocket en donde se demostró que el gran poder de Pikachu sobrepasaba el poder de su evolución, el Equipo
+          Rocket
+          constantemente intenta capturar al pokémon para Giovanni, jefe de la organización.
+        </p>
+        <p>Al llegar a Ciudad Pewter tras pasar el Bosque Viridian, Ash decide participar en la Liga Pokémon. Para
+          comenzar su travesía de recolección de medallas de gimnasio por toda la región Kanto, Brock es el primer líder
+          de gimnasio que es desafiado por Ash a una batalla oficial. Sin embargo, al no poder vencer a Brock, Ash
+          decide
+          ir a otro gimnasio. Poco después Brock entrega a Ash su primera medalla de gimnasio y deja su cargo de líder
+          de
+          gimnasio para viajar junto con Ash y cumplir su sueño de ser un Criador Pokémon.Desde ese día, Ash viaja por
+          todo Kanto recolectando medallas de gimnasio en compañía de Misty y Brock. Después de conseguir las 8 medallas
+          de los gimnasios de Kanto, Ash participa en el torneo de la Liga Pokémon en donde queda entre los 16 mejores
+          entrenadores de la competencia
+        </p>
+      </article>
+      <table class="table table-sm">
+        <tr>
+          <th style="width:50%">Serie</th>
+          <th>Temporadas</th>
+        </tr>
+        <tr>
+          <td>
+            <h4>Pokémon La Serie Original</h4>
+            <p>Cuenta con 276 capítulos y abarca las primeras cinco temporadas en occidente, se inicio originalmente
+              en Japón el 1 de abril de 1997</p>
+          </td>
+          <td>
+            <ul>
+              <li>
+                TEMPORADA 1: ¡ATRAPALOS YA! (¡YO TE ELIJO! / LIGA AÑÍL)
+              </li>
+              <li>
+                TEMPORADA 2: LIGA NARANJA
+              </li>
+              <li>
+                TEMPORADA 3: LOS VIAJES JOHTO
+              </li>
+              <li>
+                TEMPORADA 4: LOS CAMPEONES DE LA LIGA JOHTO
+              </li>
+              <li>
+                TEMPORADA 5: LA BÚSQUEDA DEL MAESTRO
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4>POKÉMON: GENERACIÓN AVANZADA</h4>
+            <p>Es la segunda serie del anime, no obstante el título de esta serie continúa siendo «Pocket Monsters» en
+              la versión japonesa. Los primeros 131 episodios están ambientados en la región Hoenn y basados en
+              Pokémon Ruby y Sapphire, los 2 primeros videojuegos de la tercera saga principal de videojuegos de la
+              franquicia Pokémon;​ mientras que el resto (61 episodios) están basados en la Batalla de la Frontera o
+              Frente de Batalla del videojuego Pokémon Esmeralda y ambientados en la región Kanto.</p>
+          </td>
+          <td>
+            <ul>
+              <li>TEMPORADA 6: FUERZA MÁXIMA</li>
+              <li>TEMPORADA 7: RETO MÁXIMO</li>
+              <li>TEMPORADA 8: BATALLA AVANZADA</li>
+              <li>TEMPORADA 9: LA BATALLA DE LA FRONTERA</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4>POKÉMON: DIAMANTE Y PERLA</h4>
+            <p>Es la tercera serie del anime, no obstante el título de esta serie continúa siendo «Pocket Monsters» en
+              la versión japonesa. Está ambientada en la región Sinnoh y basada en el argumento de Pokémon ediciones
+              Diamante y Perla, los 2 primeros videojuegos de la cuarta saga principal de videojuegos de la franquicia
+              Pokémon</p>
+          </td>
+          <td>
+            <ul>
+              <li>TEMPORADA 10: DIAMANTE Y PERLA</li>
+              <li>TEMPORADA 11: DIMENSIÓN DE BATALLA</li>
+              <li>TEMPORADA 12: BATALLAS GALÁCTICAS</li>
+              <li>TEMPORADA 13: LOS VENCEDORES DE LA LIGA SINNOH</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4>POKÉMON: BLANCO Y NEGRO</h4>
+              <p>
+                Es la cuarta serie del anime. El 15 de abril de 2010, TV Tokyo confirmó la conclusión de Pokémon Diamond
+                & Pearl en otoño de 2010 y asimismo el inicio de una nueva serie basada en los videojuegos Pokémon Negro
+                y Blanco, que salieron la venta en el mercado japonés el 18 de septiembre. Finalmente, el 23 de
+                septiembre de 2010 se estrenó en TV Tokyo la cuarta serie de anime basada en Pokémon bajo el nombre de
+                Pokémon Best Wishes!</p>
+              <p>Luego de despedirse a Dawn/Maya y despedirse de Brock, Ash emprende otro viaje hacia una nueva región
+                llamada Unova/Teselia y las islas decolora, donde Ash conoce a sus nuevos compañeros de viaje Iris y
+                Cilan
+              </p>
+          </td>
+          <td>
+            <ul>
+              <li>
+                TEMPORADA 14: BLANCO Y NEGRO
+              </li>
+              <li>
+                TEMPORADA 15: DESTINOS RIVALES
+              </li>
+              <li>
+                TEMPORADA 16: AVENTURAS EN UNOVA
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4>POKÉMON: XY</h4>
+              <p>
+                Es la quinta serie del anime. Luego de despedirse de Iris y Cilan/Millo, Ash emprende un nuevo viaje a
+                la región Kalos para reunir sus 8 medallas de gimnasio y poder competir en la Liga Pokémon de esa nueva
+                región, en esta nueva aventura los acompaña Serena, Bonnie/Clem y su hermano Clemont/Lem. Algo que
+                podemos destacar en esta serie es que podremos ver la megaevolución, que fue introducida en Pokémon X e
+                Y, videojuegos en los que está basada esta serie del anime.
+              </p>
+          </td>
+          <td>
+            <ul>
+              <li>
+                TEMPORADA 17: XY
+              </li>
+              <li>
+                TEMPORADA 18: XY: Expediciones En Kalos
+              </li>
+              <li>
+                TEMPORADA 19: XYZ
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h5>POKÉMON: SOL y LUNA</h5>
+             <p>Es la sexta serie del anime. En esta serie Ash está viviendo aventuras con sus compañeros de clase:
+               Lulú, Kiawe, Nereida, Lylia y Chris por la región de Alola.</p>
+          </td>
+          <td>
+            <ul>
+              <li>
+                TEMPORADA 20: SOL Y LUNA
+              </li>
+              <li>
+                TEMPORADA 21: SOL Y LUNA: Ultra Aventuras
+              </li>
+              <li>
+                TEMPORADA 22: SOL Y LUNA: Ultra Legendas
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h5>POCKET MONSTERS</h5>
+              <p>Pokémon, se emite en Japón bajo el título de Poketto Monsutā? es la séptima serie del anime, y parte de
+                la octava generación de la franquicia titulada "Espada y Escudo", aunque incluye elementos basados en
+                Pokémon Go.</p>
+          </td>
+          <td>
+            <ul>
+              <li>
+                TEMPORADA 23: Pokemon (Pocket Monsters)
+              </li>
+              <li>
+                TEMPORADA 23: Pokemon Viajes! (Pocket Monsters)
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--Final Contenido-->
+  </div>
+  <footer class="container-fluid fixed-bottom">
+    <div class="row">
+      <div class="col-4">
+        Pokémon Fan Page: Diseñado por <a href="https://github.com/matiasherr">Matías Herrera</a>
+      </div>
+      <div class="col">
+        Pokémon y todos los personajes son una marca registrada por <a href="https://www.pokemon.com/">The
+          Pokémon Company</a> - integrada por <a href="https://www.nintendo.com/">© Nintendo</a>, <a
+          href="https://www.gamefreak.co.jp/">© Game Freak</a>, y <a href="https://www.creatures.co.jp/en/">©
+          Creatures, Inc.</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

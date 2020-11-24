@@ -2,65 +2,287 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-    <link rel="stylesheet" href="css/estilos.css" />
-    <title>Pokemon's FanPage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Inicio Bootstrap Remoto
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  --><!--Fin Bootstrap Remoto-->
+  <!--Bootstrap en local -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--Bootstrap en local -->
+  <link rel="stylesheet" href="css/estilos.css" />
+  <title>Pokémon: La Saga</title>
 </head>
 
 <body>
-    <header class="container-fluid">
-        <h1><img src="img/Int_Pkmon_logo.png" width="200" alt="Pok&eacute;mon" /></h1>
-        <p>La presente es una Fan Page que compila datos de La Saga Pokémon, tando en videojuegos como el animé
+  <!--Cabecera cambia dependiendo de la sección-->
+  <header class="container-fluid">
+    <h1><img src="img/Int_Pkmon_logo.png" width="200" alt="Pok&eacute;mon" /></h1>
+    <p>La presente es una Fan Page que compila datos de La Saga Pokémon, tando en videojuegos como el animé
+    </p>
+  </header>
+  <!--Fin Cabecera Cabecera-->
+  <div class="container">
+    <!--Barra Navegación Inicio-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <img src="img/pika.gif" alt="" height="35">
+      <a class="navbar-brand" href="index.html">Pokémon</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="miMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="pkmsaga.html">La Saga</a></li>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">El Anime <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="pkmserie.html">Animé Pokémon</a></li>
+              <li><a href="pkmserie1.html">La Serie Original</a></li>
+              <li><a href="pkmserie2.html">Generación Avanzada</a></li>
+              <li><a href="pkmserie3.html">Diamante Y Perla</a></li>
+              <li><a href="pkmserie4.html">Blanco Y Negro</a></li>
+              <li><a href="pkmserie5.html">XY</a></li>
+              <li><a href="pkmserie6.html">Sol y Luna</a></li>
+              <li><a href="pkmserie7.html">Pocket Monsters</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pkmgo.html">Pokemon Go</a></li>
+          <li class="nav-item"><a class="nav-link" href="pkmctc.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--Barra Navegación Fin-->
+    <!--Inicio Contenido-->
+    <div id="principal">
+      <article>
+        <h2>Pokémon: La Saga</h2>
+        <p>La Saga significa <ins>"monstruos de bolsillo"</ins> y originalmente se trata de personajes creados por el
+          diseñador de videojuegos <a href="https://es.wikipedia.org/wiki/Satoshi_Tajiri">Satoshi Tajiri</a> que en
+          conjunto con la compañia japonesa Game Freak desarrollaron un juego en el año 1996 para consolas
+          Nintendo.<br /> Debido a su popularidad ha logrado expandirse a otros medios de entretenimiento como series de
+          televisión, películas, juegos de cartas, ropa, entre otros, convirtiéndose en una marca que es reconocida en
+          el mercado mundial.</p>
+      </article>
+      <article>
+        <h3>La serie de videojuegos de Pokémon</h3>
+        <p>Referida por los fanes como la "saga principal", son videojuegos de rol desarrollados por Game Freak y
+          publicados para videoconsolas portátiles de Nintendo.</p>
+        <p>
+          La serie se divide en generaciones Pokémon, las cuales son los grupos de videojuegos que aparecen en un cierto
+          período y que comparten una serie de características similares, concretamente los personajes y criaturas
+          (Pokémon) y la región donde se sucede la historia. Estas generaciones suelen corresponderse con las
+          generaciones de las consolas. La aparición sucesiva de generaciones suele tener como consecuencia la
+          publicación de nuevas entregas de diversos productos derivados de los videojuegos, como la serie de anime
+          Pokémon.
         </p>
-    </header>
-    <div class="container">
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <img src="img/pika.gif" alt="" height="35px">
-        <a class="navbar-brand" href="index.html">Pokémon</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="miMenu">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="pkmsaga.html">La Saga</a></li>
-            <li class="nav-item dropdown">
-              <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">El Anime  <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="pkmserie.html">Animé Pokémon</a></li>
-                <li><a href="pkmserie1.html">La Serie Original</a></li>
-                <li><a href="pkmserie2.html">Generación Avanzada</a></li>
-                <li><a href="pkmserie3.html">Diamante Y Perla</a></li>
-                <li><a href="pkmserie4.html">Blanco Y Negro</a></li>
-                <li><a href="pkmserie5.html">XY</a></li>
-                <li><a href="pkmserie6.html">Sol y Luna</a></li>
-                <li><a href="pkmserie7.html">Pocket Monsters</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="pkmgo.html">Pokemon Go</a></li>
-            <li class="nav-item"></li><a class="nav-link" href="pkmctc.html">Contacto</a></li>  
-          </ul>
-        </div>  
-      </nav>
-</div>
-    <footer class="container-fluid">
-        <div class="row">
-
-            <div class="col-4">
-                Pokémon Fan Page: Diseñado por <a href="https://github.com/matiasherr">Matías Herrera</a>
-            </div>
-            <div class="col">
-                Pokémon y todos los personajes son una marca registrada por <a href="https://www.pokemon.com/">The
-                    Pokémon Company</a> - integrada por <a href="https://www.nintendo.com/">© Nintendo</a>, <a
-                    href="https://www.gamefreak.co.jp/">© Game Freak</a>, y <a href="https://www.creatures.co.jp/en/">©
-                    Creatures, Inc.</a>
-            </div>
+      </article>
+      <article>
+        <h3>Listado de videojuegos</h3>
+        <div style="text-align:center; overflow-x:auto;">
+          <table class="table table-bordered">
+            <thead>
+              <th>Generación / Consola</th>
+              <th>Juegos</th>
+            </thead>
+            <tr>
+              <td>
+                <p class="st">Generacion Cromática</p>
+                GameBoy
+                <img alt="GameBoy" width="95" src="img/GameBoy.png" />
+                <p>
+                  (1) Nintendo 64 <br />
+                  <img alt="N64" width="150" src="img/nintendo64.jpg" /><br /><small>(Por compatibilidad de contenido
+                    del juego se agrega a esta generación esta consola)</small>
+                </p>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Pokémon Green <small>(Sólo salió en Japón)</small>
+                  </li>
+                  <li>
+                    Pokémon Rojo
+                  </li>
+                  <li>
+                    Pokémon Azul
+                  </li>
+                  <li>
+                    Pokémon Amarillo
+                  </li>
+                  <li>
+                    Pokémon Stadium (1)
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="st">Generación Metálica </p>
+                <small>(La primera generación es totalmente compatible con la segunda, no así al revés, puesto que si un pokémon no existía previamente o posee un ataque no existente, no será aceptado.)</small><br/>
+                Game Boy Color
+                <img alt="GameBoy Color" width="95" src="img/GameBoyColor.png" />
+                <p>
+                  (2) Nintendo 64 <small>(Es compatible con las 6 ediciones de Game Boy y las nuevas versiones Oro,
+                    Plata y Cristal)</small>
+                </p>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Pokémon Oro y Plata
+                  </li>
+                  <li>
+                    Pokémon Cristal
+                  </li>
+                  <li>
+                    Pokémon Stadium 2 (2)
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="st">Generacion Advanced</p>
+                Game Boy Advance
+                <img alt="Game Boy Advance" width="95" src="img/Game_Boy_Advance.png" /><br/>
+                (3) <small>Remake de la primer generación pero compatibles con los de tercer generación. (Debido a las
+                  nuevas características de la consola los juegos anteriores son incompatibles, se deben utilizar
+                  remakes e intercambiar con los detallados debajo.)</small>
+                <p>(4) Nintendo GameCube
+                  <img alt="GameCube" width="120" src="img/gamecube.png" class="float-left" />
+                </p>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Pokémon Rubí y Zafiro
+                  </li>
+                  <li>
+                    Pokémon Esmeralda
+                  </li>
+                  <li>
+                    Pokémon Rojo Fuego (3)
+                  </li>
+                  <li>
+                    Pokémon Verde Hoja (3)
+                  </li>
+                  <li>
+                    Pokémon Colosseum (4)
+                  </li>
+                  <li>
+                    Pokémon XD (4)
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="st">Cuarta Generación</p>
+                <p>Nintendo DS<img alt="Imagen de consola Nintendo DS" width="120" src="img/NintendoDS.png" /></p>
+                <p><small><img alt="Imagen de consola Nintendo Wii" width="120" src="img/Wii.png" class="imleft" />(**)
+                    En paralelo se genero una serie de juegos especificos para las consolas de Sobremesa Wii y WiiU(que
+                    además se podian conectar con DS) iniciada por Pokémon Battle Revolution y con destacados juegos
+                    como la serie PokePark Wii</small></p>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Pokémon Diamante y Perla
+                  </li>
+                  <li>Pokémon Platino</li>
+                  <li> y Pokémon Oro corazón y Plata alma </li>
+                  <li> Pokemon Mundo Misterioso: Rojo, Azul, Exploradores del Tiempo y de Oscuridad. (**)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="st">Quinta generación</p>
+                <p>Nintendo DS</p>
+                <p>(5) Nintendo 3DS<img alt="Imagen de consola Nintendo 3DS" width="120" src="img/Nintendo3DS.png" />
+                </p>
+              </td>
+              <td>
+                <ul>
+                  <li>Pokémon Black & White</li>
+                  <li>Pokémon Black & White 2 (5)</li>
+                  <li>Pokémon: Rumble Blast (5)</li>
+                  <li>Pokémon + Nobunaga's ambition (5)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="st">Sexta generación</p>
+                <p>Nintendo 3DS</p>
+                <p>Nintendo 3DS XL<img alt="Imagen de consola Nintendo 3DS XL" width="120"
+                    src="img/nintendo3dsxl.png" /></p>
+              </td>
+              <td>
+                <ul>
+                  <li>Pokémon X & Pokémon Y</li>
+                  <li>Pokémon Rubí Omega & Pokémon Zafiro Alfa <br /><small>Remake de los juegos para Game Boy
+                      Advance</small></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="st">Séptima generación</p>
+                <p>Nintendo 3DS // 3DS XL</p>
+                <p>(6) Nintendo Switch <img alt="Imagen de consola Nintendo Switch" width="150"
+                    src="img/nintendoswitch.png" /></p>
+              </td>
+              <td>
+                <ul>
+                  <li><small>Fuera de esta categoría salió <a href="pkmgo.html">Pokémon Go</a> que tras su boom dió
+                      origen a esta nueva generación</small></li>
+                  <li>Pokémon Sol y Luna</li>
+                  <li> Pokémon Ultrasol y Ultraluna</li>
+                  <li> Pokémon Let's Go, Pikachu! y Let's Go, Eevee! (6) <small>Remake de Pokémon Amarillo con
+                      integración a Pokémon Go</small></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="st">Octava generación</p>
+                <p>Nintendo Switch (7)</p>
+                <p>(7) Android <small>(integración de transferencia con <a href="pkmgo.html">Pokémon Go</a> desde
+                    noviembre de 2020)</small></p>
+              </td>
+              <td>
+                <ul>
+                  <li>Pokémon espada y Pokémon escudo</li>
+                  <li>Pokémon Home (7) <small>Servicio en la nube.</small></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
         </div>
-    </footer>
+      </article>
+    </div>
+    <!--Final Contenido-->
+  </div>
+  <footer class="container-fluid fixed-bottom">
+    <div class="row">
+      <div class="col-4">
+        Pokémon Fan Page: Diseñado por <a href="https://github.com/matiasherr">Matías Herrera</a>
+      </div>
+      <div class="col">
+        Pokémon y todos los personajes son una marca registrada por <a href="https://www.pokemon.com/">The
+          Pokémon Company</a> - integrada por <a href="https://www.nintendo.com/">© Nintendo</a>, <a
+          href="https://www.gamefreak.co.jp/">© Game Freak</a>, y <a href="https://www.creatures.co.jp/en/">©
+          Creatures, Inc.</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
