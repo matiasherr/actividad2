@@ -1,0 +1,124 @@
+html, body{
+  background-color: #fbfaa4;
+  height:100%;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  text-align: justify;
+}
+body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
+}
+.container-fluid{
+  background-color: #ffcb05;
+}
+header h1{
+  text-align: center;
+}
+footer{
+  bottom: 0;
+  position: absolute ;
+  border-top-style: solid;
+  font-size: 7pt;
+  padding-top: 10pt;
+  padding-bottom: 10px;
+  text-align: center;
+  font-style: oblique;
+  font-weight: bolder;
+}
+#principal{
+  margin-bottom: 85px;
+}
+.dropdown-menu{
+  background-color:#60729b;
+  padding-left: 7px;
+}
+header p{
+  text-align: center;
+  font-weight: bolder;
+}
+nav {
+  background-color:#3c5ba6 ;
+  font-size:13pt;
+}
+nav a:link,nav a:visited,nav a:active{
+  text-decoration: none;
+  color: #ffcb05 !important;
+}
+.nav-link, navbar-brand{
+  color: #ffcb05 !important;
+  font-weight: bold!important;
+}
+nav a:hover,.nav-link:hover, .nav-item:hover{
+  color:#100 !important;
+}
+a.active:link, a.active:visited, a.active:active{
+  color: white !important;
+  opacity: 0.5 !important;
+  font-style:italic !important;
+}
+footer a:link,footer a:visited,footer a:active{
+  text-decoration: none;
+  color: #100;
+}
+footer a:hover{
+  color: #3c5ba6;
+}
+.float-left{
+  margin-right: 17px;
+}
+.float-right{
+  margin-left: 25px;
+}
+#principal a:link, #principal a:visited, #principal a:active{
+  color: #3c5ba6;
+  font-weight: bold;
+  text-decoration: none;
+}
+#principal a:hover{
+  color: #100;
+  border: 1px dotted black;
+  background-color: #ffcb05;
+}
+li{
+  margin: 10pt;
+}
+th{
+  text-align: center;
+  background-color: #ffcb05;
+  color: #3c5ba6;
+}
+td {
+  padding-left: 10px;
+  padding-right: 5px;
+  vertical-align:text-top;
+}
+h2{
+  font-weight: bold;
+  color: #3c5ba6;
+  font-style:italic;
+  padding-top: 15px;
+}
+h3, h4, h5, h6{
+  color: #3c5ba6;
+  font-style:italic;
+}
+.st{
+  font-style: italic;
+  font-variant: small-caps;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #3c5ba6;
+  font-weight: bold;
+}
+.container-logo{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.img-responsive{
+    margin: 0 auto;
+}
