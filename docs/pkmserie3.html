@@ -2,77 +2,346 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Inicio Bootstrap Remoto
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Inicio Bootstrap Remoto
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    --><!--Fin Bootstrap Remoto-->
-    <!--Bootstrap en local -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--Bootstrap en local -->
-    <link rel="stylesheet" href="css/estilos.css" />
-    <title>Pokemon's FanPage</title>
+    -->
+  <!--Fin Bootstrap Remoto-->
+  <!--Bootstrap en local -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--Bootstrap en local -->
+  <link rel="stylesheet" href="css/estilos.css" />
+  <title>POKÉMON: DIAMANTE Y PERLA</title>
 </head>
+
 <body>
   <!--Cabecera cambia dependiendo de la sección-->
-    <header class="container-fluid">
-        <h1><img src="img/Int_Pkmon_logo.png" width="200" alt="Pok&eacute;mon" /></h1>
-        <p>La presente es una Fan Page que compila datos de La Saga Pokémon, tando en videojuegos como el animé
-        </p>
-    </header>
-    <!--Fin Cabecera Cabecera-->
-    <div class="container">
-      <!--Barra Navegación Inicio-->
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <img src="img/pika.gif" alt="" height="35">
-        <a class="navbar-brand" href="index.html">Pokémon</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="miMenu">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="pkmsaga.html">La Saga</a></li>
-            <li class="nav-item dropdown">
-              <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">El Anime  <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="pkmserie.html">Animé Pokémon</a></li>
-                <li><a href="pkmserie1.html">La Serie Original</a></li>
-                <li><a href="pkmserie2.html">Generación Avanzada</a></li>
-                <li><a href="pkmserie3.html">Diamante Y Perla</a></li>
-                <li><a href="pkmserie4.html">Blanco Y Negro</a></li>
-                <li><a href="pkmserie5.html">XY</a></li>
-                <li><a href="pkmserie6.html">Sol y Luna</a></li>
-                <li><a href="pkmserie7.html">Pocket Monsters</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="pkmgo.html">Pokemon Go</a></li>
-            <li class="nav-item"><a class="nav-link" href="pkmctc.html">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!--Barra Navegación Fin-->
-      <!--Inicio Contenido-->
+  <header class="container-fluid">
+    <h1><img src="img/Int_Pkmon_logo.png" width="200" alt="Pok&eacute;mon" /></h1>
+    <small><p>Está ambientada en la región Sinnoh y basada en el argumento de Pokémon ediciones Diamante y Perla, los 2 primeros videojuegos de la cuarta saga principal de videojuegos</p></small>
+  </header>
+  <!--Fin Cabecera Cabecera-->
+  <div class="container">
+    <!--Barra Navegación Inicio-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <img src="img/pika.gif" alt="" height="35">
+      <a class="navbar-brand" href="index.html">Pokémon</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="miMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="pkmsaga.html">La Saga</a></li>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">El Anime <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="pkmserie.html">Animé Pokémon</a></li>
+              <li><a href="pkmserie1.html">La Serie Original</a></li>
+              <li><a href="pkmserie2.html">Generación Avanzada</a></li>
+              <li><a href="pkmserie3.html">Diamante Y Perla</a></li>
+              <li><a href="pkmserie4.html">Blanco Y Negro</a></li>
+              <li><a href="pkmserie5.html">XY</a></li>
+              <li><a href="pkmserie6.html">Sol y Luna</a></li>
+              <li><a href="pkmserie7.html">Pocket Monsters</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pkmgo.html">Pokemon Go</a></li>
+          <li class="nav-item"><a class="nav-link" href="pkmctc.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--Barra Navegación Fin-->
+    <!--Inicio Contenido-->
+    <div class="container-logo">
+      <a href="pkmserie2.html" role="button" class="btn btn-outline-primary">Anterior</a>
+      <a href="pkmserie.html#list" role="button" class="btn btn-outline-warning btn-light">La Serie</a>
+      <a href="pkmserie4.html" role="button" class="btn btn-outline-primary">Siguiente</a>
+    </div>
 
-      <!--Final Contenido-->
-</div>
-    <footer class="container-fluid fixed-bottom">
-        <div class="row">
-            <div class="col-4">
-                Pokémon Fan Page: Diseñado por <a href="https://github.com/matiasherr">Matías Herrera</a>
-            </div>
-            <div class="col">
-                Pokémon y todos los personajes son una marca registrada por <a href="https://www.pokemon.com/">The
-                    Pokémon Company</a> - integrada por <a href="https://www.nintendo.com/">© Nintendo</a>, <a
-                    href="https://www.gamefreak.co.jp/">© Game Freak</a>, y <a href="https://www.creatures.co.jp/en/">©
-                    Creatures, Inc.</a>
-            </div>
+    <div class="row" id="principal">
+      <div class="d-none d-sd-none d-md-block col-2">
+        <br>
+      </div>
+      <div class="col-sm-12 col-md-8">
+
+        <div class="container-logo">
+          <img src="img/pokemont10.jpg" alt="Imagen presentacion Temporada 10"
+            class="img img-responsive rounded-circle" />
         </div>
-    </footer>
+
+        <h5 id="t10">TEMPORADA 10: DIAMANTE Y PERLA</h5>
+        <ol>
+          <li>Siguiendo El Camino De Una Novata</li>
+          <li>¡Dos Grados De Separación!</li>
+          <li>¡Cuando Los Mundos Pokémon Colapsan!</li>
+          <li>¡El Amanecer De Una Nueva Era!</li>
+          <li>Nuevos Amigos</li>
+          <li>Diferentes Estilos De Batalla, Diferentes Pokémon</li>
+          <li>¡Entrenando A Piplup!</li>
+          <li>¡Los Farsantes!</li>
+          <li>Dando La Bienvenida A Buneary</li>
+          <li>¡No Pueden Con Nosotros!</li>
+          <li>¡Coordinadores En Entrenamiento!</li>
+          <li>¡Un Rival Está Por Llegar!</li>
+          <li>¡Ha Nacido Un Staravia!</li>
+          <li>¡Brock Lo Puede Todo!</li>
+          <li>¡Un Estilo Inesperado!</li>
+          <li>¡Un Estilo Que No Se Copia!</li>
+          <li>¡Salvajes Por Las Calles!</li>
+          <li>¡Sobre Rampardos Ganaremos!</li>
+          <li>¡Una Nueva Conquista!</li>
+          <li>¡El Botín Pokémon!</li>
+          <li>¡Queremos La Evolución!</li>
+          <li>¡Prestando A La Mala!</li>
+          <li>¡Un Steelix Al Ataque!</li>
+          <li>¡Cocinando Una Linda Historia!</li>
+          <li>¡El Súper Poffin Plan!</li>
+          <li>¡Nervios De Concurso!</li>
+          <li>¡Saldando Cuentas Viejas!</li>
+          <li>¡Un Drifloon En El Aire!</li>
+          <li>¡Los Gemelos Campeones!</li>
+          <li>Un Tesoro Dulce Y Encantador</li>
+          <li>Los De Tipo Hierba Siempre Son Más Fuertes</li>
+          <li>Una Dulce Y Enojada Combinación</li>
+          <li>¡Todos Listos Y Disfrazados!</li>
+          <li>¡Buizel, Cuidado Con Tu Camino!</li>
+          <li>¡Un Encuentro Con La Élite Cuatro!</li>
+          <li>Una Esfera Secreta De Influencia</li>
+          <li>¡Reserva De Pokémon De Hierba!</li>
+          <li>¡Una Gran Familia Feliz!</li>
+          <li>¡Viaje En Barco De Vapor!</li>
+          <li>Entrenamiento Especial</li>
+          <li>Entrenando Con Jesselina</li>
+          <li>En Compañía De Electrike</li>
+          <li>Malicia En El País De Las Maravillas</li>
+          <li>¡Hipo-sis Masiva!</li>
+          <li>¡A La Caza De Los Shieldon!</li>
+          <li>¡La Carrera Laberíntica!</li>
+          <li>Liberando A Sandshrew</li>
+          <li>Una Lección Para Dawn</li>
+          <li>¡La Gran Batalla Dúo!</li>
+          <li>Llamarada De Gloria</li>
+          <li>Espíritu De Compañerismo</li>
+        </ol>
+        <img src="img/pokemont10p.jpg" alt="Imagen Película Temporada 10" class="float-right" />
+        <h6>Temporada 10: Peliculas y Extras</h6>
+        <ul>
+          <li>El Surgimiento De Darkrai (Película)</li>
+          <li>El Club De Exploración De Pikachu (Corto)</li>
+          <li>Mundo Misterioso: Exploradores Del Tiempo Y La Oscuridad (Especial)</li>
+        </ul>
+        <div class="container-logo">
+          <img src="img/pokemont11.jpg" alt="Imagen presentacion Temporada 11"
+            class="img img-responsive rounded-circle" />
+        </div>
+
+        <h5 id="t11">TEMPORADA 11: DIMENSIÓN DE BATALLA</h5>
+        <ol>
+          <li>Enfrenta Tus Temores</li>
+          <li>¡Que Verdes Eran Los Pastos!</li>
+          <li>El Intercambio</li>
+          <li>La Re-Aparición De Spiritomb</li>
+          <li>Bibarel Es El Mejor</li>
+          <li>Husmeando En La Montaña</li>
+          <li>Visión De Luxray</li>
+          <li>Viaje A Lo Desconocido</li>
+          <li>Un Buen Equipo</li>
+          <li>Gracias Por Los Recuerdos</li>
+          <li>Las Aguas Termales</li>
+          <li>Tiempos De Cambio</li>
+          <li>Un Baño De Arena</li>
+          <li>La Estrategia Del Líder Perdido</li>
+          <li>Cruzando La Línea De La Batalla</li>
+          <li>Triple Oportunidad De Batalla</li>
+          <li>Intergaláctico</li>
+          <li>Suenan Las Campanas</li>
+          <li>El Policía Pokémon Y El Rapto De Riolu (Primera Parte)</li>
+          <li>El Policía Pokémon Y El Rapto De Riolu (Segunda Parte)</li>
+          <li>Los Caminos Se Cruzan</li>
+          <li>Pika Y Goliath</li>
+          <li>La Copa Wallace</li>
+          <li>Una Batalla Bien Servida</li>
+          <li>Bienvenidos Todos Nuestros Héroes</li>
+          <li>Compitiendo Entre Amigos</li>
+          <li>Estrategia Con Una Sonrisa</li>
+          <li>Los Ladrones Que Se La Pasan Robando</li>
+          <li>Achimcharado</li>
+          <li>La Crema Innata De Los Croagunk</li>
+          <li>Una Súper Trayectoria De Poder</li>
+          <li>Hambrientos De La Buena Vida</li>
+          <li>Derrotando El Miedo Con Miedo</li>
+          <li>Llegando Con Estilo</li>
+          <li>Los Psyduck Llegaron Ya</li>
+          <li>La Academia Pokémon De Verano</li>
+          <li>Un Encuentro Cercano</li>
+          <li>Ghoul Daze</li>
+          <li>Equipo Uno, Equipo Dos, Equipo Rojo, Equipo Azul</li>
+          <li>Una Muy Mala Y El Equipo Rocket</li>
+          <li>Jugando En Un Campo Superior</li>
+          <li>Doc Brock</li>
+          <li>Peleando Con La Brecha Generacional</li>
+          <li>Perdiendo Su Brillo</li>
+          <li>El Malévolo Equipo Galáctica</li>
+          <li>Si La Bufanda Te Queda, Póntela</li>
+          <li>Reencuentro De Pokémon Y Entrenador</li>
+          <li>Ayudando Al Enemigo</li>
+          <li>Barry Se La Pasa Peleando</li>
+          <li>Protegidos Con Un Escudo</li>
+          <li>Cambiándose De Equipo</li>
+          <li>Durmiendo Antes De La Batalla</li>
+        </ol>
+        <img src="img/pokemont11p.jpg" alt="Imagen Película Temporada 11" class="float-right" />
+        <h6>Temporada 11: Peliculas y Extras</h6>
+        <ul>
+          <li>Giratina Y El Guerrero Celestial (Película)</li>
+          <li>La Gran Aventura En Hielo De Pikachu (Corto)</li>
+          <li>Mundo Misterioso: Exploradores Del Cielo (Especial)</li>
+        </ul>
+        <div class="container-logo">
+          <img src="img/pokemont12.jpg" alt="Imagen presentacion Temporada 12"
+            class="img img-responsive rounded-circle" />
+        </div>
+
+        <h5 id="t12">TEMPORADA 12: BATALLAS GALÁCTICAS</h5>
+        <ol>
+          <li>¡Enciende Tu Rotom!</li>
+          <li>Una Estampida Variada</li>
+          <li>Asuntos Familiares Antiguos</li>
+          <li>Lidiando Con Tipos Defensivos</li>
+          <li>Guiando A Un Descarriado</li>
+          <li>Acerando La Serenidad</li>
+          <li>Salvando Al Mundo De Las Ruinas</li>
+          <li>Alegría En La Isla De Los Náufragos</li>
+          <li>¡Agarra El Phione!</li>
+          <li>¡Otro Gabite Muerde El Polvo!</li>
+          <li>Robando La Conversación</li>
+          <li>El Snorunt Errante</li>
+          <li>Fideos Vienen Y Van</li>
+          <li>Persiguiendo Una Meta Elevada</li>
+          <li>Juicios Y Adulaciones</li>
+          <li>El Snover Solitario</li>
+          <li>Detenida En Nombre Del Amor</li>
+          <li>¡Viejos Rivales, Trucos Nuevos!</li>
+          <li>¡Sé Honesto Con Tu Pokémon!</li>
+          <li>Enfrentando Un Lindo Drama</li>
+          <li>Entrenamiento De Salón</li>
+          <li>Patinando A La Séptima</li>
+          <li>¡Una Furia Piramidal!</li>
+          <li>¡Pilares De Amistad!</li>
+          <li>Congelados En Sus Pasos</li>
+          <li>¡Pedal Hasta El Fondo!</li>
+          <li>¡Estrategias Evolucionadas!</li>
+          <li>Aceptando La Derrota</li>
+          <li>Promoviendo Un Tangrowth Saludable</li>
+          <li>Acabando Con El Juicio Y El Bullicio</li>
+          <li>Portal A Las Ruinas</li>
+          <li>Tres Lados En Cada Historia</li>
+          <li>La Estrategia Comienza En Casa</li>
+          <li>Un Final En Falso De Oak</li>
+          <li>Trama Histórica Por Lo Desconocido</li>
+          <li>Retando A Una Figura Imponente</li>
+          <li>Donde Ningún Togepi Fue Antes</li>
+          <li>Huevo Revuelto</li>
+          <li>Lo Que La Planta Eólica Se Llevó</li>
+          <li>Una Rivalidad Digna De Un Gible</li>
+          <li>¡Vestido Para El Éxito De Jess!</li>
+          <li>Embolsado Y Etiquetado</li>
+          <li>Hazlo Por La Piedra De La Familia</li>
+          <li>¡Pégate A Quien Conoces!</li>
+          <li>¡Desatando La Cadena Roja De Eventos!</li>
+          <li>Las Necesidades De Los Tres</li>
+          <li>¡La Batalla Final De Leyenda!</li>
+          <li>¡El Tesoro Es Todo Mío!</li>
+          <li>Dominando Los Eventos Actuales</li>
+          <li>Entrenamiento De Batalla A Paso Veloz</li>
+          <li>Un Meteórico Ascenso A La Excelencia</li>
+          <li>Hay Que Conseguir Un Gible</li>
+        </ol>
+        <img src="img/pokemont12p.png" alt="Imagen Película Temporada 12" class="float-right" />
+        <h6>Temporada 12: Peliculas y Extras</h6>
+        <ul>
+          <li>Arceus Y La Joya De La Vida (Película)</li>
+          <li>La Gran Aventura Chispeante De Pikachu (Corto)</li>
+          <li>Pokémon Ranger: Trazos De Luz (Cortos)</li>
+        </ul>
+        <div class="container-logo">
+          <img src="img/pokemont13.png" alt="Imagen presentacion Temporada 13"
+            class="img img-responsive rounded-circle" />
+        </div>
+
+        <h5 id="t13">
+          TEMPORADA 13: LOS VENCEDORES DE LA LIGA SINNOH</h5>
+        <ol>
+          <li>Recuperando La Ventaja En Casa</li>
+          <li>Corto, Pero Certero</li>
+          <li>El Maratón De Rivales</li>
+          <li>¡Sí, Se Trata De Dawn!</li>
+          <li>Repitiendo La Presentación</li>
+          <li>Enfrentando La Ira Con Fuego</li>
+          <li>Piplup Emprende El Vuelo</li>
+          <li>¡Flint Enciende El Fuego!</li>
+          <li>La Desaparición De La Torre Marina</li>
+          <li>Educando Al Maestro</li>
+          <li>Siguiendo En La Cima Por Mí</li>
+          <li>Guardia Pokémon: El Rescate De Heatran</li>
+          <li>Un Encubrimiento Élite</li>
+          <li>El Amanecer De Un Buen Día</li>
+          <li>Con La Gracia Más Sencilla</li>
+          <li>Enfrentando Dos Dramas Iguales</li>
+          <li>¡Última Llamada, Primera Ronda!</li>
+          <li>Los Opuestos Interactúan</li>
+          <li>¡El Inicio - El Festival Circular!</li>
+          <li>¡Una Gran Batalla Que Ganar!</li>
+          <li>¡Por El Amor De Meowth!</li>
+          <li>¡La Octava Maravilla Del Mundo Sinnoh!</li>
+          <li>Cuatro Caminos Bifurcan En Un Puerto Pokémon</li>
+          <li>En Contra Del Tesoro</li>
+          <li>¡Una Vieja Mezcla De Familia!</li>
+          <li>¡La Liga Desencadenada!</li>
+          <li>Buscando Un Paul En Barry</li>
+          <li>Entrenando Un Buen Movimiento</li>
+          <li>La Estrategia Del Conocimiento De Razas</li>
+          <li>Un Rival Muy Agitador</li>
+          <li>Enfrentando Un Deshielo En Las Relaciones</li>
+          <li>¡La Frontera Semi-Final!</li>
+          <li>¡Brock, El Salvador!</li>
+          <li>Los Recuerdos Se Hacen De Felicidad</li>
+        </ol>
+        <img src="img/pokemont13p.png" alt="Imagen Película Temporada 13" class="float-right" />
+        <h6>Temporada 13: Peliculas y Extras</h6>
+        <ul>
+          <li>Zoroark: El Maestro De Ilusiones (Película)</li>
+          <li>La Misteriosa Gran Aventura De Pikachu (Corto)</li>
+          <li>Especial de Dawn (Subtitulado)</li>
+          <li>Especial de Brock (Subtitulado)</li>
+        </ul>
+      </div>
+      <div class="d-none d-sd-none d-md-block col-2">
+        <br>
+      </div>
+    </div>
+    <!--Final Contenido-->
+  </div>
+  <footer class="container-fluid fixed-bottom">
+    <div class="row">
+      <div class="col-4">
+        Pokémon Fan Page: Diseñado por <a href="https://github.com/matiasherr">Matías Herrera</a>
+      </div>
+      <div class="col">
+        Pokémon y todos los personajes son una marca registrada por <a href="https://www.pokemon.com/">The
+          Pokémon Company</a> - integrada por <a href="https://www.nintendo.com/">© Nintendo</a>, <a
+          href="https://www.gamefreak.co.jp/">© Game Freak</a>, y <a href="https://www.creatures.co.jp/en/">©
+          Creatures, Inc.</a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

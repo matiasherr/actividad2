@@ -6,6 +6,7 @@ html, body{
   flex-direction: column;
   font-family: sans-serif;
   text-align: justify;
+  font-size: 11pt;
 }
 body::after {
   content: '';
@@ -106,6 +107,9 @@ h3, h4, h5, h6{
   color: #3c5ba6;
   font-style:italic;
 }
+h3{
+  font-size: 1em;
+}
 .st{
   font-style: italic;
   font-variant: small-caps;
@@ -121,4 +125,19 @@ h3, h4, h5, h6{
 }
 .img-responsive{
     margin: 0 auto;
+}
+.bloque{
+  ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-color: #ffcb05;
+  display: block;
+  margin: 20px;
+  padding: 10px;
+  min-height: 250px;
+  min-width: 120px;
+  text-align: center;
+}
+.bloquep{
+  font-size: 0.8em;
 }
