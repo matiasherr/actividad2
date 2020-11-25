@@ -141,3 +141,8 @@ h3{
 .bloquep{
   font-size: 0.8em;
 }
+.stt{
+  font-weight: bold;
+  font-size: smaller;
+  font-style: oblique;
+}
