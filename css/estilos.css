@@ -11,7 +11,7 @@ html, body{
 body::after {
   content: '';
   display: block;
-  height: 50px; /* Set same as footer's height */
+  height: 50px; 
 }
 .container-fluid{
   background-color: #ffcb05;
@@ -127,7 +127,6 @@ h3{
     margin: 0 auto;
 }
 .bloque{
-  ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1.25rem;
   background-color: #ffcb05;
