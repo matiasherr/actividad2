@@ -145,3 +145,9 @@ h3{
   font-size: smaller;
   font-style: oblique;
 }
+.vs1{
+  visibility: visible;
+}
+.vs0{
+  visibility: hidden;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Inicio Bootstrap Remoto
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    -->
+  <!--Fin Bootstrap Remoto-->
+  <!--Bootstrap en local -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--Bootstrap en local -->
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <title>Preguntas sobre Pokémon</title>
+</head>
+
+<body>
+  <!--Cabecera cambia dependiendo de la sección-->
+  <header class="container-fluid">
+    <h1><img src="img/Int_Pkmon_logo.png" width="200" alt="Pok&eacute;mon" /></h1>
+    <p>Ponemos a prueba tus conocimientos sobre Pokémon</p>
+  </header>
+  <!--Fin Cabecera Cabecera-->
+  <div class="container">
+    <!--Barra Navegación Inicio-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <img src="img/pika.gif" alt="" height="35">
+      <a class="navbar-brand" href="index.html">Pokémon</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="miMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="pkmsaga.html">La Saga</a></li>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">El Anime <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="pkmserie.html">Animé Pokémon</a></li>
+              <li><a href="pkmserie1.html">La Serie Original</a></li>
+              <li><a href="pkmserie2.html">Generación Avanzada</a></li>
+              <li><a href="pkmserie3.html">Diamante Y Perla</a></li>
+              <li><a href="pkmserie4.html">Blanco Y Negro</a></li>
+              <li><a href="pkmserie5.html">XY</a></li>
+              <li><a href="pkmserie6.html">Sol y Luna</a></li>
+              <li><a href="pkmserie7.html">Pocket Monsters</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pkmgo.html">Pokemon Go</a></li>
+          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="pkmctc.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--Barra Navegación Fin-->
+    <!--Inicio Contenido-->
+    <div id="principal">
+      <br />
+
+
+    <div id="saludo">
+      <h3>Bienvenido a este pequeño exámen sobre cuanto conoces algunos Pokémon</h3>
+          <form name="completar" action="#">
+          <label>Por favor ingresá tu nombre:</label>
+          <input type="text" id="name" placeholder="Nombre">
+          <button id="saludo" name="saludo" value="saludo">Enviar</button>
+        </form>
+    </div>
+      <div id="answer" class="vs0">
+        <div id="intent" class="alert alert-warning" role="alert">
+        Tienes 4 intentos para responder:
+        </div>
+        <h4>¿Cuál es el Pokémon con mas evoluciones?</h4>
+        <form name="preg1" action="#">
+          <label>Ingresa el nombre:</label>
+          <input type="text" id="pkname" placeholder="Pokémon">
+          <button id="pknamer" name="pknamer" value="pknamer" onclick="adivina()">Enviar</button>
+        </form>
+        <div id="fail" class="alert alert-danger vs0" role="alert">
+          <p class="falla">
+            Has cometido un error.
+          </p>
+          <p>
+            ¿Estás seguro que es el Pokémon correcto? ¿Su nombre está bien escrito?
+          </p>
+        </div>
+      </div>
+</div>
+    <!--Final Contenido-->
+  </div>
+  <footer class="container-fluid fixed-bottom">
+    <div class="row">
+      <div class="col-4">
+        Pokémon Fan Page: Diseñado por <a href="https://github.com/matiasherr">Matías Herrera</a>
+      </div>
+      <div class="col">
+        Pokémon y todos los personajes son una marca registrada por <a href="https://www.pokemon.com/">The
+          Pokémon Company</a> - integrada por <a href="https://www.nintendo.com/">© Nintendo</a>, <a
+          href="https://www.gamefreak.co.jp/">© Game Freak</a>, y <a href="https://www.creatures.co.jp/en/">©
+          Creatures, Inc.</a>
+      </div>
+    </div>
+  </footer>
+  <!--Bootstrap scripts en local -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--Bootstrap scripts en local -->
+</body>
+
+</html>
